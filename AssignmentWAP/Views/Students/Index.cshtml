@@ -3,7 +3,7 @@
 @{
     ViewBag.Title = "Index";
 }
-
+@{ var data = Model.AsEnumerable(); }
 <h2>Index</h2>
 
 <p>
@@ -12,40 +12,47 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.MaSinhVien)
+            @Html.DisplayName("Mã sinh viên")
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.HinhThucNopPhat)
+            @Html.DisplayName("Hình thức nộp phạt")
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.SoTienNopPhat)
+            @Html.DisplayName("Số lần tiền nộp phạt")
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.NgayNopPhat)
+            @Html.DisplayName("Số lần chống đẩy")
+        </th>
+        <th>
+            @Html.DisplayName("Ngày nộp phạt")
         </th>
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-<tr>
-    <td>
-        @Html.DisplayFor(modelItem => item.MaSinhVien)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.HinhThucNopPhat)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.SoTienNopPhat)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.NgayNopPhat)
-    </td>
-    <td>
-        @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
-        @Html.ActionLink("Details", "Details", new { id = item.Id }) |
-        @Html.ActionLink("Delete", "Delete", new { id = item.Id })
-    </td>
-</tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaSinhVien)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HinhThucNopPhat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TienNopPhat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ChongDay)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgayNopPhat)
+            </td>
+        </tr>
+    }
+<td>Tổng số tiền nộp phạt : @Model.Sum(i => i.TienNopPhat)</td>
+   
+<td>Tổng số lần chống đẩy: @Model.Sum(i => i.ChongDay)</td>
+ 
+
 
 </table>

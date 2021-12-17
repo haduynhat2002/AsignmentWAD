@@ -76,7 +76,12 @@ C:\Users\haduy\source\repos\AssignmentWAP\AssignmentWAP\bin\System.Web.WebPages.
 C:\Users\haduy\source\repos\AssignmentWAP\AssignmentWAP\bin\Newtonsoft.Json.xml
 C:\Users\haduy\source\repos\AssignmentWAP\AssignmentWAP\bin\Antlr3.Runtime.pdb
 C:\Users\haduy\source\repos\AssignmentWAP\AssignmentWAP\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\haduy\source\repos\AssignmentWAP\AssignmentWAP\obj\Debug\AssignmentWAP.csproj.AssemblyReference.cache
+C:\Users\haduy\source\repos\AssignmentWAP\AssignmentWAP\obj\Debug\AssignmentWAP.Migrations.InitialCreate.resources
+C:\Users\haduy\source\repos\AssignmentWAP\AssignmentWAP\obj\Debug\AssignmentWAP.Migrations.Add_Ngay.resources
+C:\Users\haduy\source\repos\AssignmentWAP\AssignmentWAP\obj\Debug\AssignmentWAP.Migrations.Students.resources
+C:\Users\haduy\source\repos\AssignmentWAP\AssignmentWAP\obj\Debug\AssignmentWAP.Migrations.Add_Student.resources
+C:\Users\haduy\source\repos\AssignmentWAP\AssignmentWAP\obj\Debug\AssignmentWAP.Migrations.addStudent.resources
+C:\Users\haduy\source\repos\AssignmentWAP\AssignmentWAP\obj\Debug\AssignmentWAP.csproj.GenerateResource.cache
 C:\Users\haduy\source\repos\AssignmentWAP\AssignmentWAP\obj\Debug\AssignmentWAP.csproj.CoreCompileInputs.cache
 C:\Users\haduy\source\repos\AssignmentWAP\AssignmentWAP\obj\Debug\AssignmentWAP.csproj.CopyComplete
 C:\Users\haduy\source\repos\AssignmentWAP\AssignmentWAP\obj\Debug\AssignmentWAP.dll

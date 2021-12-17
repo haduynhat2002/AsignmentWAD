@@ -18,6 +18,7 @@ namespace AssignmentWAP.Controllers
         // GET: Students
         public ActionResult Index()
         {
+       
             return View(db.Students.ToList());
         }
 
@@ -45,18 +46,15 @@ namespace AssignmentWAP.Controllers
         // POST: Students/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,MaSinhVien,HinhThucNopPhat,SoTienNopPhat")] Student student)
-        {
-            if (ModelState.IsValid)
+        [HttpPost]       
+        public ActionResult Create([Bind(Include = "Id,MaSinhVien,HinhThucNopPhat,TienNopPhat,ChongDay")] Student student)
+        {         
             {
                 db.Students.Add(student);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-
-            return View(student);
+           
         }
 
         // GET: Students/Edit/5

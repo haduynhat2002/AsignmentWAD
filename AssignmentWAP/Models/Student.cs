@@ -12,10 +12,8 @@ namespace AssignmentWAP.Models
         public int Id { get; set; }
         public string MaSinhVien { get; set; }
         public string HinhThucNopPhat { get; set; }
-        public int SoTienNopPhat { get; set; }
-        public DateTime NgayNopPhat
-        {
-            get { return DateTime.Now; }
-        }
+        public int TienNopPhat { get; set; }
+        public int ChongDay { get; set; }
+        public DateTime NgayNopPhat { get; set; } = DateTime.Now;
     }
 }

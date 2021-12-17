@@ -132,10 +132,32 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202112110543117_InitialCreate.cs" />
+    <Compile Include="Migrations\202112110543117_InitialCreate.Designer.cs">
+      <DependentUpon>202112110543117_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202112150418476_Add_Ngay.cs" />
+    <Compile Include="Migrations\202112150418476_Add_Ngay.Designer.cs">
+      <DependentUpon>202112150418476_Add_Ngay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202112151139231_Students.cs" />
+    <Compile Include="Migrations\202112151139231_Students.Designer.cs">
+      <DependentUpon>202112151139231_Students.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202112151225347_Add_Student.cs" />
+    <Compile Include="Migrations\202112151225347_Add_Student.Designer.cs">
+      <DependentUpon>202112151225347_Add_Student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202112151250488_addStudent.cs" />
+    <Compile Include="Migrations\202112151250488_addStudent.Designer.cs">
+      <DependentUpon>202112151250488_addStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="aspnet-mvc.gitignore.gitignore" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -172,10 +194,8 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Students\Create.cshtml" />
-    <Content Include="Views\Students\Delete.cshtml" />
-    <Content Include="Views\Students\Details.cshtml" />
-    <Content Include="Views\Students\Edit.cshtml" />
     <Content Include="Views\Students\Index.cshtml" />
+    <Content Include="Views\Home\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -192,6 +212,23 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202112110543117_InitialCreate.resx">
+      <DependentUpon>202112110543117_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112150418476_Add_Ngay.resx">
+      <DependentUpon>202112150418476_Add_Ngay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112151139231_Students.resx">
+      <DependentUpon>202112151139231_Students.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112151225347_Add_Student.resx">
+      <DependentUpon>202112151225347_Add_Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112151250488_addStudent.resx">
+      <DependentUpon>202112151250488_addStudent.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
